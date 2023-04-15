@@ -1,15 +1,15 @@
 <script setup>
-import { ref } from "vue";
-import { useRefHistory, useDebouncedRefHistory } from "@vueuse/core";
+import { ref } from 'vue'
+import { useRefHistory, useDebouncedRefHistory } from '@vueuse/core'
 
-const name = ref("");
-const newToDo = ref("");
-const todos = ref([]);
+const name = ref('')
+const newToDo = ref('')
+const todos = ref([])
 // const { history, undo, redo } = useRefHistory(name);
 const { history, undo, redo } = useDebouncedRefHistory(name, {
   // wait a second
   debounce: 1000,
-});
+})
 </script>
 
 <template>
@@ -17,8 +17,8 @@ const { history, undo, redo } = useDebouncedRefHistory(name, {
     <input type="text" v-model="name" />
     <button
       @click="
-        todos.unshift(newToDo);
-        newToDo = '';
+        todos.unshift(newToDo)
+        newToDo = ''
       "
     >
       Create ToDo
@@ -26,7 +26,7 @@ const { history, undo, redo } = useDebouncedRefHistory(name, {
     <button @click="undo">Undo</button>
     <button @click="redo">Redo</button>
     <ul>
-      <li v-for="todo in todos" :key="item.id">{{ todo }}</li>
+      <li v-for="todo in todos" :key="todo.id">{{ todo }}</li>
     </ul>
     <pre>{{ history }}</pre>
   </div>

@@ -14,10 +14,6 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-
-      <nav>
-        <NuxtLink to="/">Home</NuxtLink>
-      </nav>
     </div>
   </header>
 </template>

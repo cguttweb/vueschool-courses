@@ -13,9 +13,13 @@ defineProps({
 })
 </script>
 
-<style lang="css">
+<style lang="scss">
+$size: 50pt;
+$yellow: #dcae1d;
+
 .username {
-  color: #dcae1d;
-  font-size: 4rem;
+  color: $yellow;
+  font-size: $size;
+  text-align: center;
 }
 </style>

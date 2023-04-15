@@ -1,7 +1,20 @@
 <template>
-  <div></div>
+  <div>
+    <p>UseDark</p>
+    <button @click="toggleDark()">Toggle Dark Mode</button>
+  </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useDark, useToggle } from '@vueuse/core'
 
-<style scoped></style>
+const isDark = useDark()
+const toggleDark = useToggle(isDark)
+</script>
+
+<style>
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+</style>
