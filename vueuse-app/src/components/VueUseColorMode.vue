@@ -21,7 +21,7 @@ const colorMode = useColorMode({
 })
 </script>
 
-<style scoped>
+<style>
 .dim {
   background: #999;
   color: #333;

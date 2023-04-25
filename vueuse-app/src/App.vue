@@ -6,16 +6,18 @@
     <VueUseColorMode />
     <VueDarkMode />
     <VueUsePageLeave />
+    <VueUseStorage />
     <VueUseState />
   </div>
 </template>
 
 <script setup>
-import VueDarkMode from "./components/VueDarkMode.vue";
-import VueUseAnimation from "./components/VueUseAnimation.vue";
-import VueUseColorMode from "./components/VueUseColorMode.vue";
-import VueUsePageLeave from "./components/VueUsePageLeave.vue";
-import VueUseState from "./components/VueUseState.vue";
+import VueDarkMode from './components/VueDarkMode.vue'
+import VueUseAnimation from './components/VueUseAnimation.vue'
+import VueUseColorMode from './components/VueUseColorMode.vue'
+import VueUsePageLeave from './components/VueUsePageLeave.vue'
+import VueUseStorage from './components/VueUseStorage.vue'
+import VueUseState from './components/VueUseState.vue'
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

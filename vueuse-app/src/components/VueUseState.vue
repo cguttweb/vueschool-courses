@@ -1,35 +1,43 @@
-<script setup>
-import { ref } from 'vue'
-import { useRefHistory, useDebouncedRefHistory } from '@vueuse/core'
-
-const name = ref('')
-const newToDo = ref('')
-const todos = ref([])
-// const { history, undo, redo } = useRefHistory(name);
-const { history, undo, redo } = useDebouncedRefHistory(name, {
-  // wait a second
-  debounce: 1000,
-})
-</script>
-
 <template>
   <div>
-    <input type="text" v-model="name" />
+    <!-- <label for="name">Name:</label>
+    <input type="text" name="name" id="name" v-model="name" /> -->
+    <!-- prettierignore -->
+    <input
+      type="text"
+      name="todo"
+      id="todo"
+      placeholder="Add New Todo Item"
+      v-model="newToDo"
+    />
     <button
       @click="
-        todos.unshift(newToDo)
+        todos.unshift()
         newToDo = ''
       "
     >
-      Create ToDo
+      Add New ToDo
     </button>
+
     <button @click="undo">Undo</button>
     <button @click="redo">Redo</button>
-    <ul>
-      <li v-for="todo in todos" :key="todo.id">{{ todo }}</li>
-    </ul>
+
     <pre>{{ history }}</pre>
   </div>
 </template>
+
+<script setup>
+import { useRefHistory, useDebouncedRefHistory } from '@vueuse/core'
+import { ref } from 'vue'
+
+const newToDo = ref('')
+const toDos = ref([])
+// const { history, undo, redo } = useRefHistory(name)
+
+// const { history, undo, redo } = useDebouncedRefHistory(name, {
+//   // number of milliseconds to delay before new entry
+//   debounce: 1000,
+// })
+</script>
 
 <style scoped></style>
