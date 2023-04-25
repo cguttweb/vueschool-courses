@@ -8,6 +8,7 @@
     <VueUsePageLeave />
     <VueUseStorage />
     <VueUseState />
+    <VueUseTransition />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import VueUseColorMode from './components/VueUseColorMode.vue'
 import VueUsePageLeave from './components/VueUsePageLeave.vue'
 import VueUseStorage from './components/VueUseStorage.vue'
 import VueUseState from './components/VueUseState.vue'
+import VueUseTransition from './components/VueUseTransition.vue'
 </script>
 
 <style scoped></style>
