@@ -10,6 +10,7 @@ const { start, stop, isPending } = useTimeoutFn(() => {
 </script>
 
 <template>
+  <p>VueUseAnimation</p>
   <transition appear>
     <div v-if="showAlert" class="alert" @mouseenter="stop" @mouseout="start">
       Your post has saved

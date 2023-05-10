@@ -9,6 +9,7 @@
     <VueUseStorage />
     <VueUseState />
     <VueUseTransition />
+    <VueUseFetch />
     <VueOwnFavicon />
   </div>
 </template>
@@ -21,6 +22,7 @@ import VueUsePageLeave from './components/VueUsePageLeave.vue'
 import VueUseStorage from './components/VueUseStorage.vue'
 import VueUseState from './components/VueUseState.vue'
 import VueUseTransition from './components/VueUseTransition.vue'
+import VueUseFetch from './components/VueUseFetch.vue'
 import VueOwnFavicon from './components/VueOwnFavicon.vue'
 </script>
 
