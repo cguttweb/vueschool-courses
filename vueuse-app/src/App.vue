@@ -10,7 +10,10 @@
     <VueUseState />
     <VueUseTransition />
     <VueUseFetch />
+    <ReactifyExample />
     <VueOwnFavicon />
+    <p>Image Carousel</p>
+    <VueUseCarousel />
   </div>
 </template>
 
@@ -24,6 +27,8 @@ import VueUseState from './components/VueUseState.vue'
 import VueUseTransition from './components/VueUseTransition.vue'
 import VueUseFetch from './components/VueUseFetch.vue'
 import VueOwnFavicon from './components/VueOwnFavicon.vue'
+import ReactifyExample from './components/ReactifyExample.vue'
+import VueUseCarousel from './components/VueUseCarousel.vue'
 </script>
 
 <style scoped></style>
