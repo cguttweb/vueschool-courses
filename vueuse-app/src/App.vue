@@ -12,6 +12,8 @@
     <VueUseFetch />
     <ReactifyExample />
     <VueOwnFavicon />
+    <AutoReset />
+    <VueUseBase64 />
     <p>Image Carousel</p>
     <VueUseCarousel />
   </div>
@@ -29,6 +31,8 @@ import VueUseFetch from './components/VueUseFetch.vue'
 import VueOwnFavicon from './components/VueOwnFavicon.vue'
 import ReactifyExample from './components/ReactifyExample.vue'
 import VueUseCarousel from './components/VueUseCarousel.vue'
+import AutoReset from './components/AutoReset.vue'
+import VueUseBase64 from './components/VueUseBase64.vue'
 </script>
 
 <style scoped></style>
