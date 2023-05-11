@@ -16,6 +16,7 @@
     <VueUseBase64 />
     <ComputedAsync />
     <LogicUtils />
+    <Elements />
     <p>Image Carousel</p>
     <VueUseCarousel />
   </div>
@@ -37,6 +38,7 @@ import AutoReset from './components/AutoReset.vue'
 import VueUseBase64 from './components/VueUseBase64.vue'
 import ComputedAsync from './components/ComputedAsync.vue'
 import LogicUtils from './components/LogicUtils.vue'
+import Elements from './components/Elements.vue'
 </script>
 
 <style scoped></style>
