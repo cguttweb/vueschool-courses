@@ -14,6 +14,8 @@
     <VueOwnFavicon />
     <AutoReset />
     <VueUseBase64 />
+    <ComputedAsync />
+    <LogicUtils />
     <p>Image Carousel</p>
     <VueUseCarousel />
   </div>
@@ -33,6 +35,8 @@ import ReactifyExample from './components/ReactifyExample.vue'
 import VueUseCarousel from './components/VueUseCarousel.vue'
 import AutoReset from './components/AutoReset.vue'
 import VueUseBase64 from './components/VueUseBase64.vue'
+import ComputedAsync from './components/ComputedAsync.vue'
+import LogicUtils from './components/LogicUtils.vue'
 </script>
 
 <style scoped></style>

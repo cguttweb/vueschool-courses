@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@vueuse/math": "^10.1.2"
+  }
+}

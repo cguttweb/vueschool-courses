@@ -11,7 +11,7 @@
 
 <script setup>
 import { ref } from 'vue'
-// this supports canvas, images, files and buffers
+// this supports canvas, images, files and buffers in this example used to show a preview of a file upload
 import { useBase64 } from '@vueuse/core'
 
 const image = ref('')
